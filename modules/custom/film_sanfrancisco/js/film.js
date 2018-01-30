@@ -191,13 +191,13 @@
      */
     function addFilmToList(item, i) {
         // console.log(item);
-        var div = $('<div class="row filmItem" id="item_' + i + '"><div class="col-md-2"><div class="film_avatar"></div></div>' +
-            '<div class="col-md-10">' +
+        var div = $('<div class="row filmItem" id="item_' + i + '"><div class="col-md-4"><div class="film_avatar"></div></div>' +
+            '<div class="col-md-8">' +
             '<h2 class="title">' + item.title + '</h2>' +
             '<div class="locations"><i class="fa fa-circle"></i> Location: ' + item.locations + '</div>' +
             '<div class="director"><i class="fa fa-circle"></i> Director: ' + item.director + '</div>' +
             '<div class="production"><i class="fa fa-circle"></i> Production: ' + item.production_company + '</div>' +
-            '<div class="actor"><i class="fa fa-circle"></i> Actors: ' + item.actor_1 + ', ' + item.actor_2 + ', ' + item.actor_3 + '</div>' +
+            '<div class="actor"><i class="fa fa-circle"></i> Actors: ' + item.actor_1 + ' ' + item.actor_2 + ' ' + item.actor_3 + '</div>' +
             '<div class="writer"><i class="fa fa-circle"></i> Writer: ' + item.writer + '</div>' +
             '<div class="release"><i class="fa fa-circle"></i> Release: ' + item.release_year + '</div>' +
             '</div>');
@@ -215,7 +215,7 @@
      */
 
     function display_404() {
-        //console.log('Not found.');
+        console.log('Not found.');
         var div = $('<div class="row filmItem not_found"><div class="col-md-12"> No film found.</div></div>');
         $('#film_list').html(div);
     }
