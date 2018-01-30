@@ -11,8 +11,8 @@ The SF Film locations map with data sourced from SF Data (API Service), Google M
 
 * Drupal 8 Module
     * We using Drupal 8 to display Film data on the GoogleMap. 
-	* Using jQuery Autocomplete to filter feature
-	* Using Scollenless to load more item on paging
+	* Using jQuery Autocomplete for filter feature
+	* Using Scrollenless to load more item on paging
 	
 * Data Example
     * Using SoSQL Queries for search or Paging($select,$where,$group,$limit,$offset,$q... to [filter data](https://dev.socrata.com/docs/queries/)
