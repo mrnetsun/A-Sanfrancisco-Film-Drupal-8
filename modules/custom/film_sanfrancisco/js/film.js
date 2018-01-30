@@ -215,7 +215,7 @@
      */
 
     function display_404() {
-        console.log('Not found.');
+        //console.log('Not found.');
         var div = $('<div class="row filmItem not_found"><div class="col-md-12"> No film found.</div></div>');
         $('#film_list').html(div);
     }
@@ -224,7 +224,7 @@
      * Clear Map Marker
      */
     function clearMapMarker() {
-        console.log(aryMarker);
+        //console.log(aryMarker);
         for (var i = 0; i < aryMarker.length; i++) {
             if (aryMarker[i]) aryMarker[i].setMap(null);
         }
