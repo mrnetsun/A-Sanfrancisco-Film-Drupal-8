@@ -4,7 +4,7 @@ The SF Film locations map with data sourced from SF Data (API Service), Google M
 * SF Data is a denomalized set of films, locations where they were shot in San Francisco.
 * Google Maps API helped to geocode the locations. The results could be improved by cleaning more of the data.
 * The Open Movie Database provided additional metadata about the films: a poster, the plot, and any awards they might have received. 
-[SF Film] (https://data.sfgov.org/Culture-and-Recreation/Film-Locations-in-San-Francisco/yitu-d5am)
+[SF Film](https://data.sfgov.org/Culture-and-Recreation/Film-Locations-in-San-Francisco/yitu-d5am)
 
 
 ## Architecture
@@ -15,7 +15,7 @@ The SF Film locations map with data sourced from SF Data (API Service), Google M
 	* Using Scollenless to load more item on paging
 	
 * Data Example
-    * Using SoSQL Queries for search or Paging($select,$where,$group,$limit,$offset,$q... to [filter data] (https://dev.socrata.com/docs/queries/)
+    * Using SoSQL Queries for search or Paging($select,$where,$group,$limit,$offset,$q... to [filter data](https://dev.socrata.com/docs/queries/)
 
 You can see the [Demo](http://sfilm.iypuat.com:5656/film/search).
 
