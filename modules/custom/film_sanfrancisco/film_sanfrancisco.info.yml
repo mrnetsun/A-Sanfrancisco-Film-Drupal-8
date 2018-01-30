@@ -1,0 +1,5 @@
+name: Film San Francisco
+type: module
+description: Film Finder in San Francisco
+core: 8.x
+package: Film

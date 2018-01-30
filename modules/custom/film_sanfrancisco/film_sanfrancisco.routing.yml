@@ -1,0 +1,8 @@
+film_sanfrancisco.film_search:
+  path: 'film/search'
+  defaults:
+    _controller: '\Drupal\film_sanfrancisco\Controller\FilmController::search'
+    _title: 'Films In San Francisco'
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'

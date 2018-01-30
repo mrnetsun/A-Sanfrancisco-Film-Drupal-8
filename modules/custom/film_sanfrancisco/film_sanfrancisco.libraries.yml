@@ -1,0 +1,10 @@
+film-sanfrancisco:
+  version: 1.x
+  js:
+    https://maps.googleapis.com/maps/api/js?key=AIzaSyAkysiDbFxbIPSuVN4XM4R2YpbGUNzk0CY&libraries=places: { type: external}
+    https://code.jquery.com/ui/1.12.1/jquery-ui.js: { type: external}
+    js/film.js: {}
+  css:
+    theme:
+      http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css: { type: external}
+      css/style.css: {}

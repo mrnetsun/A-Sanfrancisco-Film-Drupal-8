@@ -1,0 +1,5 @@
+services:
+  filmservice:
+    class: Drupal\film_sanfrancisco\FilmService
+    arguments: ['@database']
+

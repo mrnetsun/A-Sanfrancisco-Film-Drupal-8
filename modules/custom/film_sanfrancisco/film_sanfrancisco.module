@@ -1,0 +1,57 @@
+<?php
+
+/**
+ * @file
+ * Contains film_sanfrancisco.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function film_sanfrancisco_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the film_sanfrancisco module.
+    case 'help.page.film_sanfrancisco':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Film Connector') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+
+/**
+ * Implements hook_page_attachments().
+ *
+ * Use Libraries API to load the js & css files into header.
+ */
+function film_sanfrancisco_page_attachments(array &$page) {
+     $page['#attached']['library'][] = 'film_sanfrancisco/film-sanfrancisco';
+}
+
+
+
+
+/**
+ * Implements hook_theme().
+ */
+function film_sanfrancisco_theme() {
+    return array(
+        'film_layout' => array(
+            'variables' => array(
+                'search_form' => NULL,
+            ),
+            'template' => 'film-sanfrancisco',
+        ),
+        'search_form' => array(
+            'variables' => array(
+                'search_form' => NULL
+            ),
+            'render element' => 'form'
+        ),
+    );
+}
